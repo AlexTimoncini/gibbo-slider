@@ -12,8 +12,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 size: 15,
                 hide: true,
                 animOptions: {duration: 1000, timing: [0.58, 0, 0.42, 1]},
-                startSocket: "left",
-                endSocket: "right"
+                startSocket: "right",
+                endSocket: "left"
+
             }
         ),
         ig = new LeaderLine(
@@ -27,7 +28,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 opacity: "0.5",
                 size: 15,
                 hide: true,
-                animOptions: {duration: 1000, timing: [0.58, 0, 0.42, 1]}
+                animOptions: {duration: 1000, timing: [0.58, 0, 0.42, 1]},
+                startSocket: "bottom",
+                endSocket: "right"
             }
         )
     lines.push(new LeaderLine(
@@ -41,7 +44,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
             opacity: "0.5",
             size: 15,
             hide: true,
-            animOptions: {duration: 1000, timing: [0.58, 0, 0.42, 1]}
+            animOptions: {duration: 1000, timing: [0.58, 0, 0.42, 1]},
+            startSocket: "left",
+            endSocket: "right"
         }
     ));
     lines.push(new LeaderLine(
@@ -55,7 +60,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
             opacity: "0.5",
             size: 15,
             hide: true,
-            animOptions: {duration: 1000, timing: [0.58, 0, 0.42, 1]}
+            animOptions: {duration: 1000, timing: [0.58, 0, 0.42, 1]},
+            startSocket: "right",
+            endSocket: "left"
         }
     ));
     lines.push(new LeaderLine(
@@ -69,7 +76,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
             opacity: "0.5",
             size: 15,
             hide: true,
-            animOptions: {duration: 1000, timing: [0.58, 0, 0.42, 1]}
+            animOptions: {duration: 1000, timing: [0.58, 0, 0.42, 1]},
+            startSocket: "left",
+            endSocket: "right"
         }
     ));
     lines.push(new LeaderLine(
@@ -84,7 +93,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
             size: 15,
             hide: true,
             animOptions: {duration: 1000, timing: [0.58, 0, 0.42, 1]},
-            endSocket: 'top'
+            startSocket: "bottom",
+            endSocket: "top"
         }
     ));
 
