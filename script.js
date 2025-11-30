@@ -11,7 +11,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 opacity: "0.5",
                 size: 15,
                 hide: true,
-                animOptions: {duration: 1000, timing: [0.58, 0, 0.42, 1]}
+                animOptions: {duration: 1000, timing: [0.58, 0, 0.42, 1]},
+                startSocket: "left",
+                endSocket: "right"
             }
         ),
         ig = new LeaderLine(
@@ -81,7 +83,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
             opacity: "0.5",
             size: 15,
             hide: true,
-            animOptions: {duration: 1000, timing: [0.58, 0, 0.42, 1]}
+            animOptions: {duration: 1000, timing: [0.58, 0, 0.42, 1]},
+            endSocket: 'top'
         }
     ));
 

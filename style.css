@@ -77,7 +77,7 @@ img{
 }
 #slide_1 img{
     left: 0;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%)!important;
     position: absolute;
     width: 50%;
