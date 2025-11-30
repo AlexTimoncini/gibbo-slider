@@ -85,7 +85,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
     ));
 
-    let index = 1
+    let index = 1,
+        tIndex = 0
     document.getElementById("prev").addEventListener("click", prev)
     document.getElementById("next").addEventListener("click", next)
 
@@ -93,6 +94,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         const key = event.key;
         if (key === "ArrowUp") prev()
         else if(key === "ArrowDown") next()
+        else if(key === "ArrowRight") nextTravel()
+        else if(key === "ArrowLeft") prevTraavel()
 
     });
     function next() {
@@ -146,6 +149,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
             ig.hide("draw")
             yes.hide("draw")
         }
+    }
+    function nextTravel() {
+        if(tIndex < 3) {
+            tIndex++
+        }
+        document.getElementById("travelImage").src = "./images/t"+tIndex+".jpeg"
+    }
+    function prevTraavel() {
+        if(tIndex > 0) {
+            tIndex--
+        }
+        document.getElementById("travelImage").src = "./images/t"+tIndex+".jpeg"
     }
 
 });
