@@ -96,6 +96,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
         else if(key === "ArrowDown") next()
         else if(key === "ArrowRight") nextTravel()
         else if(key === "ArrowLeft") prevTraavel()
+        else if(key === " ") {
+            document.getElementById("loader").style.opacity = "0"
+            setTimeout(()=>{
+                document.getElementById("loader").remove()
+            }, 330)
+        }
 
     });
     function next() {

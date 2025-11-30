@@ -142,3 +142,44 @@ video{
 #pilot.hide{
     opacity: 0;
 }
+.subtitle{
+    font-size: 1.8rem;
+}
+.svg-calLoader {
+    width: 230px; height: 230px;
+    transform-origin: 115px 115px;
+    animation: 1.4s linear infinite loader-spin;
+}
+#loader{
+    background-color: var(--purple);
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity .33s ease-out;
+}
+.cal-loader__plane { fill: #FFFFFF; }
+.cal-loader__path { stroke: #FFFFFF; animation: 1.4s ease-in-out infinite loader-path; }
+
+@keyframes loader-spin {
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes loader-path {
+    0%{
+        stroke-dasharray:  0, 580, 0, 0, 0, 0, 0, 0, 0;
+    }
+    50%{
+        stroke-dasharray: 0, 450, 10, 30, 10, 30, 10, 30, 10;
+    }
+    100%{
+        stroke-dasharray: 0, 580, 0, 0, 0, 0, 0, 0, 0;
+    }
+}
