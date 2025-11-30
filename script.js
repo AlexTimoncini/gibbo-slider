@@ -115,6 +115,17 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 document.getElementById("loader").remove()
             }, 330)
         }
+        else if(key === "Enter") {
+            if (document.body.requestFullScreen) {
+                document.body.requestFullScreen();
+            } else if (document.body.mozRequestFullScreen) {
+                document.body.mozRequestFullScreen();
+            } else if (document.body.webkitRequestFullScreen) {
+                document.body.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+            } else if (document.body.msRequestFullscreen) {
+                document.body.msRequestFullscreen();
+            }
+        }
 
     });
     function next() {

@@ -183,3 +183,6 @@ video{
         stroke-dasharray: 0, 580, 0, 0, 0, 0, 0, 0, 0;
     }
 }
+:not(:root):fullscreen::backdrop{
+    background: var(--purple)!important;
+}
